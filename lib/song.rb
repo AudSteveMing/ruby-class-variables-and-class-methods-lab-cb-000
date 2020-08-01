@@ -40,9 +40,10 @@ class Song
     # => ["Rap", "Pop"]
 
   def self.genre_count
-
-counts = Hash.new(0)
-@@genres.map { |genre| counts[genre] += 1}
+# 
+# counts = Hash.new(0)
+# @@genres.map { |genre| counts[genre] += 1}
+@@genres.tally
   end
 
 #   names = ["Jason", "Jason", "Teresa", "Judah", "Michelle", "Judah", "Judah", "Allison"]
