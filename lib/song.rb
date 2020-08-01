@@ -43,7 +43,7 @@ class Song
 #
 # counts = Hash.new(0)
 # @@genres.map { |genre| counts[genre] += 1}
-@@genres.group_by(&:itself).transform_values(&:count)
+@@genres.group_by(&:itself).map { |k,v| [k, v.length] }.to_h
   end
 
 #   names = ["Jason", "Jason", "Teresa", "Judah", "Michelle", "Judah", "Judah", "Allison"]
