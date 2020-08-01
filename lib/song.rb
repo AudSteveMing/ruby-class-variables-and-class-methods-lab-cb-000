@@ -36,11 +36,9 @@ class Song
   end
 
   def self.genres
-    @@genres
+    @@uniq_genres
   end
 
-  Song.genres
-    # => ["Rap", "Pop"]
 
   def self.genre_count
 #
