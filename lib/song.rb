@@ -53,7 +53,7 @@ class Song
 
 
   def self.artist_count
-
+    @@artists.group_by(&:itself).map { |k,v| [k, v.length] }.to_h
   end
 
 
