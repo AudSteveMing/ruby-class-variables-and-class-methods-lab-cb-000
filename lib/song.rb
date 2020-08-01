@@ -34,7 +34,6 @@ class Song
     @@genres
   end
 
-binding.pry
 
   def self.genre_count
   end
