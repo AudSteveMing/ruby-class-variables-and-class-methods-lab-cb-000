@@ -16,7 +16,9 @@ class Song
     @@count += 1
     @@artists << @artist
     @@uniq_artists << @artist unless @@uniq_artists.include?(@artist)
-    @@genres << @genre unless @@genres.include?(@genre)
+    @@uniq_genres << @genre unless @@uniq_genres.include?(@genre)
+    @@genres << @genre
+
 
 
   end
