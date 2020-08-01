@@ -42,7 +42,7 @@ class Song
   def self.genre_count
 
 counts = Hash.new(0)
-@@genres.each { |genre| counts[genre] += 1}
+@@genres.map { |genre| counts[genre] += 1}
   end
 
 #   names = ["Jason", "Jason", "Teresa", "Judah", "Michelle", "Judah", "Judah", "Allison"]
