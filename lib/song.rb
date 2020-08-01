@@ -36,9 +36,19 @@ class Song
     @@genres
   end
 
+  Song.genres
+    # => ["Rap", "Pop"]
 
   def self.genre_count
+
+counts = Hash.new(0)
+@@genres.each { |genre| counts[genre] += 1}
   end
+  
+#   names = ["Jason", "Jason", "Teresa", "Judah", "Michelle", "Judah", "Judah", "Allison"]
+# counts = Hash.new(0)
+# names.each { |name| counts[name] += 1 }
+
 
   def self.artist_count
 
