@@ -13,6 +13,7 @@ class Song
     @@count += 1
     @@artists << @artist unless @@artists.include?(@artist)
     @@genres << @genre unless @@genres.include?(@genre)
+    
 
   end
 
@@ -31,10 +32,12 @@ class Song
     @@genres
   end
 
+binding.pry
   def self.genre_count
   end
 
   def self.artist_count
+    
   end
 
 
